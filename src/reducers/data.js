@@ -21,12 +21,17 @@ const getLink = (state, { payload }) => {
   return newState;
 };
 
+const goToPage = (state, {url}) =>
+  console.log(url)
+
 export const data = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'DO_SOMETHING':
       return doNothing(state, action);
     case 'GET_SUCCESS_LINK':
       return getLink(state, action);
+    case 'GO_TO_PAGE':
+      return goToPage(state, action)
     case 'GET_ERROR_USER':
       return state
     default:

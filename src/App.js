@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-
-import  AccessContainer  from './containers/AccessContainer'
+import {AccessContainer} from './containers/'
 
 class App extends Component {
   render() {
