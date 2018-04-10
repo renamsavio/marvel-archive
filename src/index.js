@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import { Provider } from 'react-redux';
 import { store, history } from './store/store';
-import { Router, Route, browserHistory } from 'react-router'
+import { Route } from 'react-router'
 import { ConnectedRouter } from 'react-router-redux'
 
 import { Catalog } from './containers'

@@ -22,10 +22,6 @@ export const executeSomething = data => {
 export const goToPage = (url) => {
   return dispatch => {
     dispatch(push(url))
-    return {
-      type: 'GO_TO_PAGE',
-      url: url
-    }
   }
 
 }
@@ -41,7 +37,6 @@ export const getLink = () => {
       return success;
     }
     function onError(error) {
-      console.log(error)
       dispatch({
         type: 'GET_ERROR_USER',
         error
